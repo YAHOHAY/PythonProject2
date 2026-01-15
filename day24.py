@@ -15,10 +15,3 @@ class Solution:
                 left += 1
             maxLen = max(maxLen, i - left + 1)
         return maxLen
-
-
-
-
-
-s = Solution()
-print(s.longestOnes([1,0,1,0,1,1,1,0,0,0,0,0,1],2))

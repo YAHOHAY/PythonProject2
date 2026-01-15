@@ -4,39 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="191b61b6-4b42-4695-9eaf-d6454e47876b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day15.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day17.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day20.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day21.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day22.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day23.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_python.py" afterDir="false" />
+    <list default="true" id="191b61b6-4b42-4695-9eaf-d6454e47876b" name="Changes" comment="push">
+      <change afterPath="$PROJECT_DIR$/day25.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day29.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day30.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day24.py" beforeDir="false" afterPath="$PROJECT_DIR$/day24.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "YAHOHAY"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/YAHOHAY/PythonProject2.git",
+    "accountId": "c4ddc9bf-0bd1-44fa-ac3a-0f5d50daab8f"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -83,6 +71,11 @@
     "Python.day22.executor": "Run",
     "Python.day23.executor": "Run",
     "Python.day24.executor": "Debug",
+    "Python.day25 (1).executor": "Run",
+    "Python.day25.executor": "Run",
+    "Python.day26.executor": "Run",
+    "Python.day27.executor": "Debug",
+    "Python.day30.executor": "Run",
     "Python.day4.executor": "Run",
     "Python.day5.executor": "Run",
     "Python.day6.executor": "Run",
@@ -100,8 +93,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.day24">
-    <configuration name="day20" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.day30">
+    <configuration name="day25 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,7 +107,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day20.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day25.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day21" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="day25" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,11 +125,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.venv" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day21.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/day25.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day22" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="day26" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,7 +151,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day22.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day26.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day23" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="day27" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,7 +173,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day23.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day27.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,7 +182,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day24" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="day30" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,7 +195,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day24.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day30.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -213,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.day24" />
-        <item itemvalue="Python.day23" />
-        <item itemvalue="Python.day22" />
-        <item itemvalue="Python.day21" />
-        <item itemvalue="Python.day20" />
+        <item itemvalue="Python.day30" />
+        <item itemvalue="Python.day27" />
+        <item itemvalue="Python.day26" />
+        <item itemvalue="Python.day25 (1)" />
+        <item itemvalue="Python.day25" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +232,15 @@
       <workItem from="1763011107410" duration="2589000" />
       <workItem from="1763400770551" duration="5000" />
     </task>
+    <task id="LOCAL-00001" summary="push">
+      <option name="closed" value="true" />
+      <created>1768359083483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768359083483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +256,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="push" />
+    <option name="LAST_COMMIT_MESSAGE" value="push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -277,6 +283,11 @@
           <url>file://$PROJECT_DIR$/day21.py</url>
           <line>10</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/day30.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
