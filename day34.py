@@ -6,17 +6,15 @@ class Solution:
         for c in s:
             if "0" <= c <= "9":
                 t = t*10 + int(c)
-            elif c == '[':
-                stack.append((result, t))
-                t = 0
+            elif c == "[" :
+                stack.append((result,t))
                 result = ''
-            elif c == ']':
-                stack.pop()
-                last_result, t = stack.pop()
-                result = result*t + last_result*t
-
+                t = 0
+            elif c == "]":
+                last_result , cur_t = stack.pop()
+                result = last_result*cur_t + result
             else:
-                result = result+c
+                result += c
         return result
 
 
