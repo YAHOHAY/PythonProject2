@@ -12,10 +12,11 @@ class Solution:
                 t = 0
             elif c == "]":
                 last_result , cur_t = stack.pop()
-                result = last_result*cur_t + result
+                result = last_result + result*cur_t
             else:
                 result += c
         return result
 
-
+s = Solution()
+print(s.decodeString("3[a]2[bc]"))
 
