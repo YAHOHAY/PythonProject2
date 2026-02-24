@@ -1,7 +1,9 @@
 from typing import List, Counter
 
 
-"""*grid：这是 Python 的解包（Unpacking）操作符。
+"""*grid：这是 Python 的解包（Unpacking）
+
+操作符。
 如果 grid 是 [[3,1,2], [2,7,6], [2,7,7]]，*grid 就等同于把它拆开成三个独立的列表 [3,1,2], [2,7,6], [2,7,7] 作为参数传给 zip 函数。
 
 zip(...)：它会将传入的可迭代对象中相同索引的元素打包成一个个元组。在这个场景下，
