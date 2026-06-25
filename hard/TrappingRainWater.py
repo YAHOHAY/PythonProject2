@@ -38,8 +38,21 @@ class Solution:
     #双指针
     def trap3(self, height: List[int]) -> int:
         n = len(height)
+        left , right = 0, n-1
+        left_max , right_max = height[0], height[-1]
+        sum = 0
+        while left < right:
+            if left_max < right_max:
+                left += 1
+                left_max = max(left_max , height[left])
+                sum += left_max - height[left]
+            else:
+                right -= 1
+                right_max = max(right_max , height[right])
+                sum += right_max - height[right]
+        return sum
 
 
         ...
 s = Solution()
-print(s.trap2([0,1,0,2]))
+print(s.trap3([0,1,0,2,1,0,1,3,2,1,2,1]))
