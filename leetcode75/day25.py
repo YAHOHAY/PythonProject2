@@ -17,4 +17,4 @@ class Solution:
         else :
             return maxLen-1
 s = Solution()
-print(s.longestSubarray([0,1,1,1,0,1,1,0,1]))
+print(s.longestSubarray([0,1,0,0,0,0,0,0,1,1,0,1,1,0,1]))

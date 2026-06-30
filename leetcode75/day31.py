@@ -16,4 +16,6 @@ class Solution:
         for col in zip(*grid):
             count += counter[col]
         return count
+s = Solution()
+s.equalPairs([[3,1,2], [2,7,6], [2,7,7]])
 

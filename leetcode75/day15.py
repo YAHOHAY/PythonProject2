@@ -19,6 +19,32 @@ class Solution:
         list1 = nums[::-1]
 
         return list1
+    def productExceptSelf2(self, nums: List[int]) -> List[int]:
+        answer = [0]*len(nums)
+        answer[0] = 1
+        for i in range(1,len(nums),1):
+            answer[i] = nums[i-1]*answer[i-1]
+        pro = 1
+        for i in reversed(range(len(nums))):
+            answer[i] = pro*answer[i]
+            pro = pro*nums[i]
+
+    def compress(self, chars: List[str]) -> int:
+        write = 0
+        read = 0
+        while read < len(chars):
+            char = chars[read]
+            chars[write] = char
+            write += 1
+            count = 0
+            while read < len(chars) and chars[read] == char:
+                read += 1
+                count += 1
+            if count > 1:
+                for c in str(count):
+                    chars[write] = c
+                    write += 1
+        return write
 
 
 s = Solution()

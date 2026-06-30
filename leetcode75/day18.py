@@ -18,4 +18,4 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
 s = Solution()
-print(s.moveZeroes(nums=[1,1,654,1,1,1,1]))
+print(s.moveZeroes(nums=[1,0,0,0,0,0,1]))

@@ -17,5 +17,18 @@ class Solution:
             else:
                 j-=1
         return r
+    def maxOperations2(self, nums: List[int], k: int) -> List[int]:
+        d = {}
+        op = 0
+        for num in nums:
+            c = k - num
+            if  d.get(c,0) > 0:
+                op += 1
+                d[c] -= 1
+            else:
+                d[num] = d.get(num,0) + 1
+        return op
+
+
 s = Solution()
 print(s.maxOperations([1,2,0,3,3,2,4,], 5))
