@@ -1,4 +1,5 @@
 import collections
+from collections import deque
 from typing import List, Counter
 
 
@@ -152,8 +153,87 @@ class Solution:
             sum1 += Count1[col]
         return sum1
 
+    def removeStars(self, s: str) -> str:
+        a = []
+        for i in range(len(s)):
+            if s[i] != '*':
+                a.append(s[i])
+            else:
+                a.pop()
+        return ''.join(a)
+
+    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+        s = []
+        for i in range(len(asteroids)):
+            if asteroids[i] > 0:
+                s.append(asteroids[i])
+            else:
+                while s and s[-1] > 0:
+                    if s[-1] > abs(asteroids[i]):
+                        break
+                    elif s[-1] == abs(asteroids[i]):
+                        s.pop()
+                        break
+                    else:
+                        s.pop()
+                else:
+                    s.append(asteroids[i])
+        return s
+
+    def decodeString(self, s: str) -> str:
+        stack = []
+        res = ''
+        t = 0
+
+        for i in s:
+            if "0" <= i <= "9":
+                t = t*10 + int(i)
+            elif i == "[" :
+                stack.append((t,res))
+                res = ''
+                t = 0
+            elif i == "]":
+                m , n = stack.pop()
+                res =  n + m*res
+            else:
+                res += i
+        return res
+    def decodeString2(self, s: str) -> str:
+        stack = []
+        for i in s :
+            if i != "]":
+                stack.append(i)
+                continue
+            decode = []
+            while stack and stack[-1] != "[":
+                decode.append(stack.pop())
+            stack.pop()
+            num_str = ""
+            while stack and "0" <= stack[-1] <="9":
+                num_str = stack.pop()+ num_str
+            stack.append(''.join(int(num_str)*decode[::-1]))
+        return "".join(stack)
+
+    def predictPartyVictory(self, senate: str) -> str:
+        length = len(senate)
+        d = deque()
+        r = deque()
+        for i , j in enumerate(senate):
+            if j == "R":
+                r.append(i)
+            else:
+                d.append(i)
+        while d and r :
+            i = d.popleft()
+            j = r.popleft()
+            if i > j:
+                r.append(j + length)
+            else:
+                d.append(i + length)
+        return "Radiant" if r else "Dire"
+
         ...
 
 
 s = Solution()
-print(s.equalPairs([[1,2,3],[1,2,1],[1,2,3]]))
+print(s.decodeString2("3[a]2[bc]"))
