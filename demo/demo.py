@@ -1,5 +1,6 @@
 import collections
 from collections import deque
+from copy import copy
 from typing import List, Counter, Optional
 
 from leetcode75.debug_utils import ListNode
@@ -257,6 +258,58 @@ class Solution:
             even = even.next
         odd.next = tmp
         return head
+
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return head
+        c = head
+        prev = None
+        while c:
+            nxt = c.next
+            c.next = prev
+            prev = c
+            c = nxt
+        return prev
+    def copyList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
+        cur = dummy
+
+        while head:
+            cur.next = ListNode(head.val)
+            cur = cur.next
+            head = head.next
+
+        return dummy.next
+
+
+    def pairSum(self, head: Optional[ListNode]) -> int:
+        if  not head.next:
+            return 0
+        orginal = self.copyList(head)
+        head1 = self.reverseList(head)
+        max_pairSum = 0
+        while head1 and head1.next:
+            max_pairSum = max(head1.val + orginal.val,max_pairSum)
+            head1 = head1.next
+            head = head.next
+        return max_pairSum
+
+    def pairSum2(self, head: Optional[ListNode]) -> int:
+        thing, fast, slow = [], head, head
+        while fast:
+            fast = fast.next.next
+            thing.append(slow.val)
+            slow = slow.next
+        fast = 0
+        for n in thing[::-1]:
+            n += slow.val
+            slow = slow.next
+            if n > fast:
+                fast = n
+        return fast
+
+
+
 
 
 
