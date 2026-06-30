@@ -1,6 +1,8 @@
 import collections
 from collections import deque
-from typing import List, Counter
+from typing import List, Counter, Optional
+
+from leetcode75.debug_utils import ListNode
 
 
 class Solution:
@@ -231,6 +233,32 @@ class Solution:
             else:
                 d.append(i + length)
         return "Radiant" if r else "Dire"
+
+    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head.next == None:
+            return head
+        slow = head
+        fast = head.next.next
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        slow.next = slow.next.next
+        return head
+    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head and not head.next:
+            return head
+        odd = head
+        even = head.next
+        tmp = odd.next
+        while even and even.next:
+            odd.next = odd.next.next
+            odd = odd.next
+            even.next = even.next.next
+            even = even.next
+        odd.next = tmp
+        return head
+
+
 
         ...
 
